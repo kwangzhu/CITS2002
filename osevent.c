@@ -13,7 +13,7 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main (void) {
+int main () {
     
     int x = 0;
     printf("%d", x);
