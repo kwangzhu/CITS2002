@@ -15,5 +15,6 @@
 
 int main (void) {
     
-    printf("hello world");
+    int x = 0;
+    printf("%d", x);
 }
