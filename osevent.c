@@ -13,8 +13,19 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main () {
+int process(FILE f) {
+    char keyword[] = { "timequantum","diskrpm", "disksectors" }
+    int kloc = 0;
+    f = fopen("scenario.txt", "r");
+    if(f == NULL) {
+        fprintf(stderr, "File is empty");
+        exit(EXIT_FAILURE);
+    }
     
-    int x = 0;
+    return 0;
+}
+
+int main (void) {
+    
     printf("%d", x);
 }
