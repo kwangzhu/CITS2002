@@ -8,24 +8,29 @@
 
 #include <stdlib.h>
 #include <stdbool.h>
-#include <time.h>
 #include <math.h>
 #include <stdio.h>
 #include <ctype.h>
 
-int process(FILE f) {
-    char keyword[] = { "timequantum","diskrpm", "disksectors" }
-    int kloc = 0;
-    f = fopen("scenario.txt", "r");
-    if(f == NULL) {
+int timequantum;
+int diskrpm;
+int disksectors;
+int loc = 0;
+
+
+int readScenario() {
+    char keyword[] = { "timequantum", "diskrpm", "disksectors" };
+    //int kloc = 0;
+    //FILE fp = fopen("scenario.txt", "r");
+    //if(fgets(fp) == NULL) {
         fprintf(stderr, "File is empty");
         exit(EXIT_FAILURE);
-    }
+    //}
     
     return 0;
 }
 
 int main (void) {
     
-    printf("%d", x);
+    printf("hello world!");
 }
